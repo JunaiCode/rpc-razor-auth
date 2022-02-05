@@ -11,15 +11,16 @@ namespace rpc_razor_auth.Models
 
 		[Required]
 		public String Password { get; set; }
-		[Required]
 
+		[Required]
 		public String FirstName { get; set; }
+		
 		[Required]
-
 		public String LastName { get; set; }
 
 		[DataType(DataType.Date)]
 		public DateTime BirthDate { get; set; }
+
 		public User(String userName, String password, String firstName, String lastName, DateTime birthDate)
 		{
 			this.UserName = userName;
