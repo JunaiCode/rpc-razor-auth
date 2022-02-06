@@ -48,6 +48,7 @@ namespace rpc_razor_auth
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

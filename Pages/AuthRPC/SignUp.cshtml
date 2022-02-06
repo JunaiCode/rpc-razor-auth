@@ -1,0 +1,31 @@
+﻿@page
+@model rpc_razor_auth.Pages.AuthRPC.SignUpModel
+@{
+    ViewData["Title"] = "Sign Up";
+}
+<br />
+<body>
+    <div class="container flex-column justify-content-center align-items-center">
+        <h1 align="center" class="text-info">Sign Up</h1>
+        <div class="border">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="container" style="padding: 1.875rem">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <label asp-for="User.UserName"></label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input asp-for="User.UserName" class="form-control" />
+                                </div>
+                                <span asp-validation-for="User.UserName" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
