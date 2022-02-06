@@ -6,19 +6,19 @@
 <br />
 <body>
     <div class="container flex-column justify-content-center align-items-center">
-        <h1 align="center" class="text-info">Sign Up</h1>
+        <h1 align="center" class="text-primary">Sign Up</h1>
         <br />
-        <span class="dropdown-divider"></span>
-        <div class="border" style="padding: 0.5rem 1rem; margin: 0.2rem 12.5rem; background-color: #ffffff; border-radius: 5px; filter:drop-shadow(0 0 15px #00000055);">
+        <div class="border" style="padding: 0.5rem 1rem; margin: 0.2rem 16rem; background-color: #ffffff; border-radius: 10px; filter:drop-shadow(0 0 15px #00000033);">
             <form method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="container" style="padding: 1.75rem">
+
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <label asp-for="User.FirstName"></label>
+                        <div class="d-md-flex justify-content-center align-items-center">
+                            <div style="min-width: 8.5rem">
+                                <label asp-for="User.FirstName">First Name:</label>
                             </div>
-                            <div class="col-sm-4">
+                            <div>
                                 <input asp-for="User.FirstName" class="form-control" />
                             </div>
                             <span asp-validation-for="User.FirstName" class="text-danger"></span>
@@ -26,11 +26,11 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <label asp-for="User.LastName"></label>
+                        <div class="d-md-flex justify-content-center align-items-center">
+                            <div style="min-width: 8.5rem">
+                                <label asp-for="User.LastName">Last Name:</label>
                             </div>
-                            <div class="col-sm-4">
+                            <div>
                                 <input asp-for="User.LastName" class="form-control" />
                             </div>
                             <span asp-validation-for="User.LastName" class="text-danger"></span>
@@ -38,11 +38,11 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <label asp-for="User.UserName"></label>
+                        <div class="d-md-flex justify-content-center align-items-center">
+                            <div style="min-width: 8.5rem">
+                                <label asp-for="User.UserName">Username:</label>
                             </div>
-                            <div class="col-sm-4">
+                            <div>
                                 <input asp-for="User.UserName" class="form-control" />
                             </div>
                             <span asp-validation-for="User.UserName" class="text-danger"></span>
@@ -50,11 +50,11 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <label asp-for="User.Password"></label>
+                        <div class="d-md-flex justify-content-center align-items-center">
+                            <div style="min-width: 8.5rem">
+                                <label asp-for="User.Password">Password:</label>
                             </div>
-                            <div class="col-sm-4">
+                            <div>
                                 <input type="password" asp-for="User.Password" class="form-control" />
                             </div>
                             <span asp-validation-for="User.Password" class="text-danger"></span>
@@ -62,36 +62,38 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <label>Repeat Password</label>
+                        <div class="d-md-flex justify-content-center align-items-center">
+                            <div style="min-width: 8.5rem">
+                                <label>Repeat Password:</label>
                             </div>
-                            <div class="col-sm-4">
-                                <input type="password" name="ValidationPassword" class="form-control"  />
+                            <div>
+                                <input type="password" name="ValidationPassword" class="form-control" />
                             </div>
-                            <span asp-validation-for="User.Password"class="text-danger"></span>
+                            <span asp-validation-for="User.Password" class="text-danger"></span>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <label asp-for="User.BirthDate"></label>
+                        <div class="d-md-flex justify-content-center align-items-center">
+                            <div style="min-width: 8.5rem">
+                                <label asp-for="User.BirthDate">Birth date:</label>
                             </div>
-                            <div class="col-sm-4">
-                                <input asp-for="User.BirthDate" class="form-control" />
+                            <div>
+                                <input asp-for="User.BirthDate" class="form-control"/>
                             </div>
                             <span asp-validation-for="User.BirthDate" class="text-danger"></span>
                         </div>
                     </div>
 
+                    <br />
+
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2 offset-sm-2">
-                                <input type="submit" value="Save"  class="btn btn-primary form-control" />
+                        <div class="d-md-flex justify-content-between align-items-center" style="margin: 0rem 4.5rem 0rem 4.5rem">
+                            <div>
+                                <input type="submit" value="Save" class="btn btn-success form-control" style="width: 7.5rem"/>
                             </div>
-                            <div class="col-sm-2">
-                                <a asp-page="SignIn" class="btn btn-success form-control">Cancel</a>
+                            <div>
+                                <a asp-page="/AuthRPC/SignIn" class="btn btn-danger form-control" style="width: 7.5rem">Cancel</a>
                             </div>
                         </div>
                     </div>
