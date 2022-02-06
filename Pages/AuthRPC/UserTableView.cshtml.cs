@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using rpc_razor_auth.Data;
 using rpc_razor_auth.Models;
+using rpc_razor_auth.Pages;
 
 namespace rpc_razor_auth.Pages.AuthRPC
 {
@@ -20,6 +21,7 @@ namespace rpc_razor_auth.Pages.AuthRPC
         }
 
         public IEnumerable<User> Users { get; set; }
+        public new User User { get; set; }
         public async Task OnGet()
         {
             Users = await _db.User.ToListAsync();

@@ -9,10 +9,10 @@ using rpc_razor_auth.Models;
 
 namespace rpc_razor_auth.Pages.AuthRPC
 {
-    public class IndexModel : PageModel
+    public class SignInModel : PageModel
     {
         private readonly UsersDbContext _db;
-        public IndexModel(UsersDbContext db)
+        public SignInModel(UsersDbContext db)
         {
             _db = db;
         }

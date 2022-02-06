@@ -5,8 +5,15 @@
 }
 
 <body>
+    <div class="d-flex justify-content-center align-items-center">
+    </div>
     <h1>User List</h1>
-    <h2> Log:</h2>
+    <div class="d-md-flex justify-content-between align-items-center" style="margin: 0rem 4.5rem 0rem 4.5rem">
+        <h2> Log:</h2>
+        <div>
+            <a asp-page="/AuthRPC/SignIn" class="btn btn-danger form-control" style="width: 7.5rem">Logout</a>
+        </div>
+    </div>
 </body>
 
 @if (Model.Users.Count() > 0)
