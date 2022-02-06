@@ -18,7 +18,7 @@ namespace rpc_razor_auth.Pages.AuthRPC
         }
 
         [BindProperty]
-        public User User { get; set; }
+        public new User User { get; set; }
 
         public void OnGet()
         {

@@ -6,4 +6,31 @@
 
 <body>
     <h1>User List</h1>
+    <h2> Log:</h2>
 </body>
+
+@if (Model.Users.Count() > 0)
+{
+    <br /><br />
+          <table class="table table-striped border">
+              <tr class="table-secondary">
+              <td>@Html.DisplayNameFor(m => m.Users.FirstOrDefault().UserName)</td>
+              <td>@Html.DisplayNameFor(m => m.Users.FirstOrDefault().LastName)</td>
+              <td>@Html.DisplayNameFor(m => m.Users.FirstOrDefault().FirstName)</td>
+              <td>@Html.DisplayNameFor(m => m.Users.FirstOrDefault().BirthDate)</td>
+              </tr>
+              @foreach(var item in Model.Users)
+                {
+          <tr>
+              <td>@Html.DisplayFor(m => item.UserName)</td>
+              <td>@Html.DisplayFor(m => item.LastName)</td>
+              <td>@Html.DisplayFor(m => item.FirstName)</td>
+              <td>@Html.DisplayFor(m => item.BirthDate)</td>
+          </tr>
+                }
+          </table>
+}
+else
+{ 
+    <p> No registered users</p>
+}

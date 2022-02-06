@@ -34,9 +34,10 @@ namespace rpc_razor_auth.Pages.AuthRPC
                     return Page();
                 }
                 await _db.SaveChangesAsync();
-                return RedirectToPage("SignUp");
+                return RedirectToPage("UserTableView");
             }
             return Page();
         }
+
     }
 }
