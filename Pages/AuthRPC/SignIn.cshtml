@@ -18,7 +18,7 @@
                                 <label asp-for="User.UserName"></label>
                             </div>
                             <div class="col-sm-4">
-                                <input asp-for="User.UserName" class="form-control" />
+                                <input asp-for="User.UserName" name="us" class="form-control" />
                             </div>
                             <span asp-validation-for="User.UserName" class="text-danger"></span>
                         </div>
@@ -30,7 +30,7 @@
                                 <label asp-for="User.Password"></label>
                             </div>
                             <div class="col-sm-4">
-                                <input type="password" asp-for="User.Password" class="form-control" />
+                                <input type="password" name="pw" asp-for="User.Password" class="form-control" />
                             </div>
                             <span asp-validation-for="User.Password" class="text-danger"></span>
                         </div>
