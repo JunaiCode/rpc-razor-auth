@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
     <body>
-        <img src="/resources/banner-readme.svg" alt="banner"/>
+        <img src="/Resources/banner-readme.svg" alt="banner"/>
         <h1></h1>
         <p align="center">Developed with ❤️ by <a href="https://github.com/JunaiCode">JunaiCode</a> and <a href="https://github.com/zacwastaken">zacwastaken</a>.</p>
         <br/><br/>
