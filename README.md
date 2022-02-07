@@ -16,10 +16,5 @@
             <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
         </p>
         <h1></h1>
-        <br/><br/>
-        <h1 align="center">Features</h1>
-        <p></p>
-        <br/><br/>
-        <h1></h1>
     </body>
 </html>
